@@ -8,13 +8,16 @@ import 'mdbreact/dist/css/mdb.css';
 // style
 import './App.css';
 
+// components
+import Layout from './hoc/Layout/Layout';
+import Content from './containers/Content/Content';
 
 class App extends Component {
   render() {
     return (
-      <div className="App container z-depth-2">
-        <h1> CV </h1>
-      </div>
+      <Layout>
+        <Content></Content>
+      </Layout>
     );
   }
 }

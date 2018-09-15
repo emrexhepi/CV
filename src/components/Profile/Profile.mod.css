@@ -1,0 +1,38 @@
+.Card {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+.CardUp {
+    overflow: hidden;
+    height: 135px;
+    background: linear-gradient(40deg, #90a4ae,#455a64) !important;
+}
+
+.Avatar {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin-top: -90px;
+    overflow: hidden;
+    border: 5px solid #fff;
+}
+
+.Avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.JobTittle {
+    margin-right: -35px;
+    margin-left: -35px;
+}
+
+.JobTittle h4 {
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+}
