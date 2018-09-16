@@ -63,8 +63,10 @@ class Sidebar extends Component {
                 <Profile profile={this.state.profile}/>
                 <PersonalInfo info={this.state.PersonalInfo} />
                 <Contacts contacts={this.state.contacts}/>
-                <div className={`${styles.CardDown} row blue-grey darken-4 text-center`}>
-                    <a className='white-text' target="_blank" rel="noopener noreferrer" href="https://github.com/emrexhepi/CV">Open Source Project</a>
+                <div className={`${styles.Footer} row blue-grey darken-4 text-center`}>
+                    <div className={`${styles.FooterContainter} col-12 align-middle`}>
+                        <a className='white-text' target="_blank" rel="noopener noreferrer" href="https://github.com/emrexhepi/CV">Open Source Project</a>
+                    </div>
                 </div>
             </div>
         );

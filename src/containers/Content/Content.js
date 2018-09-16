@@ -6,7 +6,7 @@ import styles from "./Content.mod.css";
 class Content extends Component {
     render() {
         return (
-            <div className={`row ${styles.Content} blue-grey lighten-5`}>
+            <div className={`row ${styles.Content} white`}>
                 <h2>Content</h2>
                 <div className="col-12">
                     <p>Test test sest es t s lores ipsum dolor sitamet</p>
