@@ -1,0 +1,22 @@
+.PersonalInfo {
+    margin-bottom: 50px;
+    margin-left: 0px;
+}
+
+.PersonalInfo .Info {
+    margin-bottom: 5px;
+}
+
+.PersonalInfo .Tittle {
+    margin-bottom: 10px;
+}
+
+.PersonalInfo .Key {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.PersonalInfo .Value {
+    margin-left: 0;
+    padding-left: 5px;
+}

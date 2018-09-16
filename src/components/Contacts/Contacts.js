@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 import styles from "./Contacts.mod.css";
 
 // import components
-import Aux from '../../hoc/Auxiliary';
 import Contact from "./Contact/Contact";
 
 const Contacts = (props) => {
@@ -15,12 +14,10 @@ const Contacts = (props) => {
     });
 
     return (
-        <Aux>
-            <div className={`${styles.Contacts} text-center display-block`}>
-                <h3 className='text-center'>Contacts</h3>
-                {contacts}
-            </div>
-        </Aux>
+        <div className={`${styles.Contacts} text-center display-block`}>
+            <h3 className='text-center'>Contacts</h3>
+            {contacts}
+        </div>
     )
 }
 
