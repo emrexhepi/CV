@@ -1,0 +1,13 @@
+{
+    "profile": {
+        "fullName" : "Emrullah Rexhepi",
+        "job": "Job Description",
+        "birthday": "06/20/2018"
+    }, 
+    "contacts": [
+        {
+            "icon": "phone",
+            "contact" : "+383 49 901 556"
+        }
+    ]
+}
