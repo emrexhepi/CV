@@ -4,16 +4,33 @@ import PropTypes from 'prop-types'
 // import modular stles
 import styles from "./Contacts.mod.css";
 
-const Contacts = () => {
-  return (
-    <div className={`row ${styles.Contacts}`}>
-        
-    </div>
-  )
+// import components
+import Aux from '../../hoc/Auxiliary';
+import Contact from "./Contact/Contact";
+
+const Contacts = (props) => {
+
+    const contacts = props.contacts.map((item, index) => {
+        return <Contact key={`${item.icon}-${index}`} icon={item.icon} contact={item.contact} />
+    });
+
+    return (
+        <Aux>
+            <div className={`${styles.Contacts} text-center display-block`}>
+                <h3 className='text-center'>Contacts</h3>
+                {contacts}
+            </div>
+        </Aux>
+    )
 }
 
 Contacts.propTypes = {
-    icon: PropTypes.string,
+    contacts: PropTypes.arrayOf(
+        PropTypes.shape({
+            icon: PropTypes.oneOf(['mobile', 'home', 'email', 'fax', 'skype', 'address', 'website']),
+            contact: PropTypes.string
+        })
+    )
 }
 
 export default Contacts

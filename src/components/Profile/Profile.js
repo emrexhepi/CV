@@ -8,12 +8,12 @@ const Profile = (props) => {
     <div className={`card ${styles.Card}`}>
         <div className={`${styles.CardUp} row blue-grey darken-4`}></div>
         <div className={`${styles.Avatar} mx-auto white rounded-circle`}>
-            <img className="rounded-circle" src="https://raw.githubusercontent.com/emrexhepi/CV/gh-pages/images/picture.jpg" alt="Emrullah Rexhepi" />
+            <img className="rounded-circle" src={props.profile.image} alt={props.name} />
         </div>
         <div className="card-body">
-            <h2 className="card-title text-center text-uppercase font-weight-bold">Emrullah Rexhepi</h2>
-            <div className={`row ${styles.JobTittle} blue-grey darken-4`}>
-                <h4 className="white-text text-center text-uppercase">Web Developer</h4>
+            <h2 className="card-title text-center text-uppercase font-weight-bold">{props.profile.name}</h2>
+            <div className={`row ${styles.JobTittle} blue-grey darken-4 text-center`}>
+                <h5 className={`${styles.title} white-text title text-uppercase font-italic`}>{props.profile.job}</h5>
             </div>
         </div>
     </div>
@@ -21,7 +21,11 @@ const Profile = (props) => {
 }
 
 Profile.propTypes = {
-    name: PropTypes.string
+    profile: PropTypes.shape({
+        image: PropTypes.string,
+        name : PropTypes.string,
+        job : PropTypes.string,
+    })
 }
 
 export default Profile;

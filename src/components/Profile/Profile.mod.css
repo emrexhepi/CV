@@ -29,9 +29,10 @@
 .JobTittle {
     margin-right: -35px;
     margin-left: -35px;
+    margin-top: 20px;
 }
 
-.JobTittle h4 {
+.JobTittle .title {
     margin-top: 7px;
     margin-left: auto;
     margin-right: auto;

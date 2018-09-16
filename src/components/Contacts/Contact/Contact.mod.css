@@ -1,0 +1,28 @@
+.ContactItem {
+    height: 40px !important;
+    margin-top: 10px;
+}
+
+.Icon {
+    height: 100%;
+}
+
+.Icon span {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    font-size: 1.4em;
+    color: #cfd8dc;
+}
+
+.Contact {
+    height: 100%;
+}
+
+.Contact span {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+}
