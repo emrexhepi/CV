@@ -7,7 +7,7 @@ const Layout = (props) => {
     <div className="App container z-depth-2">
       <div className="row">
         <Sidebar />
-        <div className='col-9'>
+        <div className='col-sm-12 col-md-12 col-lg-9'>
           {props.children}
         </div>
       </div>

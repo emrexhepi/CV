@@ -1,4 +1,20 @@
 .App {
-    margin-top: 50px;
-    margin-top: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
+
+@media (min-width: 768px) { 
+    .App {
+        width: 540px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .App {
+        width: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}  

@@ -5,6 +5,7 @@
   "homepage": "https://emrexhepi.github.io/CV",
   "dependencies": {
     "autoprefixer": "7.1.6",
+    "axios": "^0.18.0",
     "babel-core": "6.26.0",
     "babel-jest": "20.0.3",
     "babel-loader": "7.1.2",
@@ -49,6 +50,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "deploy": "gh-pages -d build",
+    "build-deploy": "node scripts/build.js | gh-pages -d build",
     "test": "node scripts/test.js --env=jsdom"
   },
   "jest": {
