@@ -59,7 +59,7 @@ class Sidebar extends Component {
     }
     render() {
         return (
-            <div className={`col-md-12 col-sm-12 col-lg-3 ${styles.Sidebar} blue-grey lighten-4`}>
+            <div className={`col-md-12 col-sm-12 col-lg-3 ${styles.Sidebar}`}>
                 <Profile profile={this.state.profile}/>
                 <PersonalInfo info={this.state.PersonalInfo} />
                 <Contacts contacts={this.state.contacts}/>

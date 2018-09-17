@@ -12,7 +12,7 @@ const Profile = (props) => {
         </div>
         <div className="card-body">
             <h2 className="card-title text-center text-uppercase font-weight-bold">{props.profile.name}</h2>
-            <div className={`row ${styles.JobTittle} blue-grey darken-4 text-center`}>
+            <div className={`row ${styles.JobTittle} mdb-color darken-4 text-center`}>
                 <h5 className={`${styles.title} white-text title text-uppercase`}>{props.profile.job}</h5>
             </div>
         </div>

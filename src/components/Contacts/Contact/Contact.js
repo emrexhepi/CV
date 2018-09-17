@@ -34,7 +34,7 @@ const Contact = (props) => {
     }
     return (
         <div className={`${styles.ContactItem} row`}>
-            <div className={`col-3 ${styles.Icon} blue-grey darken-4 text-right`}>
+            <div className={`col-3 ${styles.Icon} mdb-color darken-4 text-right`}>
                 <span>{icon}</span>
             </div>
             <div className={`col-9 ${styles.Contact} col-8 text-left`}>

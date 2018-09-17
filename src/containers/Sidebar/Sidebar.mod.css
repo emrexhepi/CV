@@ -2,6 +2,7 @@
     left: 0;
     margin-left: 0;
     padding-bottom: 100px;
+    background-color: #e4e7f0;
 }
 
 .Footer {
@@ -9,7 +10,7 @@
     overflow: hidden;
     height: 65px;
     width: 100%;
-    background: linear-gradient(140deg, #34434b,#1f292e) !important;
+    background: linear-gradient(40deg, #1c2331, #3b465e) !important;
     position: absolute;
     bottom: 0;
     display: inline-table;
