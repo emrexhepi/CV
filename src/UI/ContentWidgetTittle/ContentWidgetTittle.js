@@ -1,15 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// import custom PropTypes
+import * as CustomPropTypes from "../../helpers/CustomPropType";
 
 // import styles
 import styles from "./ContentWidgetTittle.mod.css";
+
+// import components
+import Icon from "../../UI/Icon/Icon";
+
 
 const ContentWidgetTittle = (props) => {
   return (
     <div className={`row ${styles.Row}`}>
         <div className={`${styles.Holder} ${styles.BorderLeft} col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2`}>
             <div className={`${styles.IconHolder} text-center align-middle`} >
-                <span>{props.icon}</span>
+                <Icon classes={props.icon} />
             </div>
         </div>
         <div className={`${styles.Holder} ${styles.Right} col-9 col-sm-9 col-md-10 col-lg-10  col-xl-10 mdb-color darken-4`}>
@@ -22,9 +28,9 @@ const ContentWidgetTittle = (props) => {
 }
 
 ContentWidgetTittle.propTypes = {
-    icon: PropTypes.string,
-    tittle: PropTypes.string
+    tittle: PropTypes.string,
+    icon: CustomPropTypes.faIconClassName
 }
 
-export default ContentWidgetTittle
+export default ContentWidgetTittle;
 
