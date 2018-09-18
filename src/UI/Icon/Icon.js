@@ -1,14 +1,26 @@
 import React from 'react';
-import * as CustomPropType from "../../helpers/CustomPropType";
+import PropTypes from 'prop-types';
+import * as CustomPropTypes from "../../helpers/CustomPropTypes";
 
 const Icon = (props) => {
+    const iconStyle = {
+        fontSize : `${props.size}px`,
+    }
+
     return (
-        <i className={props.classes} aria-hidden="true"></i>
+        <i className={props.classes} style={iconStyle} aria-hidden={props.ariaHidden}></i>
     );
 }
 
 Icon.propTypes = {
-    classes: CustomPropType.faIconClassName
-} 
+    classes: CustomPropTypes.faIconClassName,
+    size: PropTypes.number,
+    ariaHidden: PropTypes.bool
+}
+
+Icon.defaultProps = {
+    size: 16,
+    ariaHidden: true
+}
 
 export default Icon;

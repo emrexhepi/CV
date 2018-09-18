@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import custom PropTypes
-import * as CustomPropTypes from "../../helpers/CustomPropType";
+import * as CustomPropTypes from "../../helpers/CustomPropTypes";
 
 // import styles
 import styles from "./ContentWidgetTittle.mod.css";
@@ -15,7 +15,7 @@ const ContentWidgetTittle = (props) => {
     <div className={`row ${styles.Row}`}>
         <div className={`${styles.Holder} ${styles.BorderLeft} col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2`}>
             <div className={`${styles.IconHolder} text-center align-middle`} >
-                <Icon classes={props.icon} />
+                <Icon classes={props.icon} size={35}/>
             </div>
         </div>
         <div className={`${styles.Holder} ${styles.Right} col-9 col-sm-9 col-md-10 col-lg-10  col-xl-10 mdb-color darken-4`}>

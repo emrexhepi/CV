@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Tittle from '../../UI/ContentWidgetTittle/ContentWidgetTittle';
 
 // import custom PropTypes
-import * as CustomPropTypes from "../../helpers/CustomPropType";
+import * as CustomPropTypes from "../../helpers/CustomPropTypes";
 
 const TextWidget = (props) => {
   return (
