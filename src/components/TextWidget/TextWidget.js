@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Tittle from '../../UI/ContentWidgetTittle/ContentWidgetTittle';
+import Tittle from "../../UI/WidgetTittle/WidgetTittle";
 
 // import custom PropTypes
 import * as CustomPropTypes from "../../helpers/CustomPropTypes";

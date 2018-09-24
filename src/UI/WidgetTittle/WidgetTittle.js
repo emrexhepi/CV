@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import * as CustomPropTypes from "../../helpers/CustomPropTypes";
 
 // import styles
-import styles from "./ContentWidgetTittle.mod.css";
+import styles from "./WidgetTittle.mod.css";
 
 // import components
-import Icon from "../../UI/Icon/Icon";
+import Icon from "../Icon/Icon";
 
 
 const ContentWidgetTittle = (props) => {
